@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     const getPatients = () => {
-      const patientsList = JSON.parse(localStorage.getItem("patients")! ?? []);
+      const patientsList = JSON.parse(localStorage.getItem("patients")!) ?? [];
       setPatients(patientsList);
     }
     getPatients();
